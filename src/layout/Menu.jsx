@@ -1,4 +1,4 @@
-import { MailOutlined, SettingOutlined } from '@ant-design/icons'
+import { ToolFilled, Html5Filled, } from '@ant-design/icons'
 import { Menu } from 'antd'
 
 function getItem (label, key, icon, children, type) {
@@ -12,20 +12,26 @@ function getItem (label, key, icon, children, type) {
 }
 
 const items = [
-  getItem('Navigation One', 'sub1', <MailOutlined/>, [
-    getItem('Item 1', 'g1', null, [getItem('Option 1', '1'), getItem('Option 2', '2')], 'group'),
-    getItem('Item 2', 'g2', null, [getItem('Option 3', '3'), getItem('Option 4', '4')], 'group'),
+  getItem('JavaScript', 'sub1', <Html5Filled/>, [
+    getItem('单例模式', 'SingletonPattern'),
+    getItem('策略模式', 'StrategyPattern'),
+    getItem('代理模式', 'ProxyPattern'),
+    getItem('迭代器模式', 'IteratorPattern'),
+    getItem('发布-订阅模式', 'PublisherSubscriberPattern'),
+    getItem('命令模式', 'CommandPattern'),
+    getItem('组合模式', 'CompositePattern'),
+    getItem('模板方法模式', 'TemplateMethodPattern'),
+    getItem('享元模式', 'FlyweightPattern'),
+    getItem('责任链模式', 'ChainOfResponsibilityPattern'),
+    getItem('中介者模式', 'MediatorPattern'),
+    getItem('装饰者模式', 'DecoratorPattern'),
+    getItem('状态模式', 'StatePattern'),
+    getItem('适配者模式', 'AdapterPattern'),
+    getItem('观察者模式', 'ObserverPattern'),
   ]),
-  {
-    type: 'divider',
-  },
-  getItem('Navigation Three', 'sub4', <SettingOutlined/>, [
-    getItem('Option 9', '9'),
-    getItem('Option 10', '10'),
-    getItem('Option 11', '11'),
-    getItem('Option 12', '12'),
+  getItem('Java', 'sub2', <ToolFilled/>, [
+    getItem('单例模式', 'SingletonPattern'),
   ]),
-  getItem('Group', 'grp', null, [getItem('Option 13', '13'), getItem('Option 14', '14')], 'group'),
 ]
 
 const MenuLeft = () => {

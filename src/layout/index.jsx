@@ -6,10 +6,10 @@ const layout = ({ children }) => {
   return (
       <>
         <Header></Header>
-        <div className="left bg-slate-800">
+        <div className="left bg-slate-800 ">
           <Menu></Menu>
         </div>
-        <div className="right">
+        <div className="right m-3.5">
           {children}
         </div>
       </>
