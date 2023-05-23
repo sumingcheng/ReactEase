@@ -1,5 +1,6 @@
 import { ToolFilled, Html5Filled, } from '@ant-design/icons'
 import { Menu } from 'antd'
+import { useNavigate } from 'react-router-dom'
 
 function getItem (label, key, icon, children, type) {
   return {
@@ -12,6 +13,7 @@ function getItem (label, key, icon, children, type) {
 }
 
 const items = [
+  // sub1
   getItem('JavaScript', 'sub1', <Html5Filled/>, [
     getItem('单例模式', 'SingletonPattern'),
     getItem('策略模式', 'StrategyPattern'),
@@ -29,14 +31,19 @@ const items = [
     getItem('适配者模式', 'AdapterPattern'),
     getItem('观察者模式', 'ObserverPattern'),
   ]),
+  // sub2
   getItem('Java', 'sub2', <ToolFilled/>, [
     getItem('单例模式', 'SingletonPattern'),
   ]),
 ]
 
 const MenuLeft = () => {
+  const navigate = useNavigate()
+  
   const onClick = (e) => {
     console.log('click ', e)
+    const path = e.key
+    navigate(`/${path}`)
   }
   return (
       <Menu

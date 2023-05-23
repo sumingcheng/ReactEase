@@ -13,6 +13,11 @@ function App () {
               <SingletonPattern/>
             </Layout>
           }/>
+          <Route path="/SingletonPattern" element={
+            <Layout>
+              <SingletonPattern/>
+            </Layout>
+          }/>
           <Route path="/StrategyPattern" element={
             <Layout>
               <StrategyPattern/>
