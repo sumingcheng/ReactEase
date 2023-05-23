@@ -1,8 +1,6 @@
-import '@/assets/less/index.less'
-
 export function StrategyPattern () {
   return (
-      <div className="orange">
+      <div className="text-orange-700 text-2xl">
         <h1>StrategyPattern</h1>
       </div>
   )
