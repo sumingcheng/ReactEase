@@ -8,6 +8,15 @@ export default defineConfig({
   plugins: [
     react(),
   ],
+  build: {
+    minify: false,
+    outDir: 'dist',
+    rollupOptions: {
+      input: {
+        main: path.resolve(__dirname, 'index.html'),
+      }
+    }
+  },
   resolve: {
     alias: {
       '@': path.resolve(__dirname, 'src'),

@@ -1,3 +1,4 @@
+
 export function SingletonPattern () {
   return (
       <div>
