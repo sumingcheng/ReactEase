@@ -1,7 +1,7 @@
-export function IteratorPattern () {
+export function AdapterPattern () {
   return (
       <div>
-        <h1 className="text-orange-700 text-2xl">IteratorPattern</h1>
+        <h1 className="text-orange-700 text-2xl">AdapterPattern</h1>
       </div>
   )
 }

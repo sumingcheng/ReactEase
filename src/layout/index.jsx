@@ -9,7 +9,7 @@ const layout = ({ children }) => {
         <div className="left bg-slate-800 ">
           <Menu></Menu>
         </div>
-        <div className="right m-3.5">
+        <div className="right">
           {children}
         </div>
       </>

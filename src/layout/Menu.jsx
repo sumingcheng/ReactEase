@@ -33,7 +33,7 @@ const items = [
   ]),
   // sub2
   getItem('Java', 'sub2', <ToolFilled/>, [
-    getItem('单例模式', 'SingletonPattern'),
+    getItem('测试菜单', 'test'),
   ]),
 ]
 
