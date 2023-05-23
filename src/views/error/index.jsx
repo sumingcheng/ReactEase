@@ -17,7 +17,7 @@ function PageNotFound () {
         <h1 style={{ fontSize: '8rem', marginBottom: '2rem' }}>404</h1>
         <p style={{ fontSize: '2rem', textAlign: 'center', maxWidth: '70%' }}>
           哎呀，看起来你偶然发现了一个不存在的页面。<br/>
-          返回 <Link to="/" style={{ color: '#fff', textDecoration: 'underline' }}>home</Link> and try again.
+          返回 <Link to="/" style={{ color: '#fff', textDecoration: 'underline' }}>home</Link> 然后重试.
         </p>
       </div>
   )
