@@ -1,17 +1,19 @@
+import Menu from '@/layout/Menu.jsx'
+import '@/assets/less/layout.less'
 // 主框架
 const layout = ({ children }) => {
   return (
       <>
-        <header>这里是头部</header>
-        <main>
-          <div className="left"></div>
-          <div className="right">
-            {children}
-          </div>
-        </main>
-        <footer>这里是尾部</footer>
+        <header className="w-full h-14 bg-slate-800"></header>
+        <div className="left bg-slate-800">
+          <Menu></Menu>
+        </div>
+        <div className="right">
+          {children}
+        </div>
       </>
   )
 }
 
 export default layout
+
