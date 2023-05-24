@@ -5,7 +5,7 @@ import { Input } from 'antd'
 const AdminComponent = () => {
   return (
       <div>
-        <div>管理员视图 - 可以查看和编辑所有内容</div>
+        <div className="text-black text-2xl">管理员视图 - 可以查看和编辑所有内容</div>
       </div>
   )
 }
@@ -14,7 +14,7 @@ const AdminComponent = () => {
 const UserComponent = () => {
   return (
       <div>
-        <div>用户视图 - 只能查看部分内容</div>
+        <div className="text-black text-2xl">用户视图 - 只能查看部分内容</div>
       </div>
   )
 }
@@ -23,7 +23,7 @@ const UserComponent = () => {
 const GuestComponent = () => {
   return (
       <div>
-        <div>游客视图 - 需要登录才能查看内容</div>
+        <div className="text-black text-2xl">游客视图 - 需要登录才能查看内容</div>
       </div>
   )
 }
