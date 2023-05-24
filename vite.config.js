@@ -8,6 +8,7 @@ export default defineConfig({
   plugins: [
     react(),
   ],
+  base: './',
   build: {
     minify: false,
     outDir: 'dist',
