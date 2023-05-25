@@ -4,7 +4,7 @@ import Routers from '@/router/index.jsx'
 import '@/assets/index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-    <React.StrictMode>
-      <Routers/>
-    </React.StrictMode>
+  <React.StrictMode>
+    <Routers />
+  </React.StrictMode>
 )
