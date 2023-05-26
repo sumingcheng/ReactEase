@@ -11,6 +11,7 @@ function LazyImage({ src, alt }) {
     const observer = new IntersectionObserver(
       // 监听元素进出视口变化的回调函数
       (entries, observer) => {
+        console.log(entries)
         entries.forEach((entry) => {
           // 如果元素进入视口
           if (entry.isIntersecting) {
