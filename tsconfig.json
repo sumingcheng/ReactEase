@@ -61,11 +61,11 @@
     /* 发射 */
     // "declaration": true,  // 从你的项目的TypeScript和JavaScript文件中生成 .d.ts 文件。
     // "declarationMap": true,  // 为 .d.ts 文件创建源映射。
-    // "emitDeclarationOnly": true,  // 只输出 .d.ts 文件，而不输出 JavaScript 文件。
+     "emitDeclarationOnly": true,  // 只输出 .d.ts 文件，而不输出 JavaScript 文件。
     // "sourceMap": true,  // 为发射的JavaScript文件创建源映射文件。
     // "inlineSourceMap": true,  // 在发射的JavaScript内部包含源映射文件。
     // "outFile": "./",  // 指定一个文件，该文件将所有输出捆绑到一个JavaScript文件中。如果 'declaration' 为 true，也指定一个文件，该文件将所有 .d.ts 输出捆绑在一起。
-    // "outDir": "./",  // 指定所有发射文件的输出文件夹。
+     "outDir": "dist",  // 指定所有发射文件的输出文件夹。
     // "removeComments": true,  // 禁止发射注释。
     // "noEmit": true,  // 禁止从编译中发射文件。
     // "importHelpers": true,  // 允许从 tslib 一次导入帮助函数，而不是每个文件中都包含它们。

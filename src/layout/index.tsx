@@ -9,10 +9,10 @@ const Layout: FC = ({ children }: LayoutProps) => {
   return (
     <>
       <Header></Header>
-      <div className="left bg-slate-800 ">
+      <div className='left bg-slate-800'>
         <Menu></Menu>
       </div>
-      <div className="right">{children}</div>
+      <div className='right'>{children}</div>
     </>
   )
 }
