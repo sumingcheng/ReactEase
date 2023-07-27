@@ -1,6 +1,6 @@
 import {defineConfig} from 'vite'
 import react from '@vitejs/plugin-react'
-import svgr from 'vite-plugin-svgr'
+import svg from 'vite-plugin-svgr'
 import path from 'path'
 import tailwindcss from 'tailwindcss'
 import autoprefixer from 'autoprefixer'
@@ -13,7 +13,7 @@ export default defineConfig({
     },
     plugins: [
         react(),
-        svgr(),
+        svg(),
         legacy({
             targets: ['ie >= 11'],
             additionalLegacyPolyfills: ['regenerator-runtime/runtime']
