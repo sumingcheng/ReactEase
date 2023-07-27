@@ -7,7 +7,7 @@ extends:
   - eslint:recommended                     # 使用 ESLint 推荐的规则
   - plugin:@typescript-eslint/recommended  # 使用 TypeScript 推荐的规则
   - plugin:react/recommended               # 使用 React 推荐的规则
-  - plugin:prettier/recommended
+  - plugin:prettier/recommended            # 这是 Prettier 插件推荐的一组规则，它做两件事：首先，它启用 eslint-plugin-prettier，使 Prettier 作为 ESLint 的一个插件运行，其次，它使用 eslint-config-prettier 来关闭所有可能与 Prettier 冲突的 ESLint 规则。
 
 globals:
   process: readonly
