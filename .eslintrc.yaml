@@ -9,7 +9,8 @@ extends:
   - plugin:react/recommended               # 使用 React 推荐的规则
 
 globals:
-  process: readonly # 声明全局变量 process 是只读的
+  process: readonly
+  __dirname: readonly
 
 parser: "@typescript-eslint/parser"   # 使用 @typescript-eslint/parser 解析器
 
