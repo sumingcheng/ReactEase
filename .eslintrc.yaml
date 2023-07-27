@@ -3,13 +3,13 @@ env:
   browser: true     # 表示代码将在浏览器环境中运行
   es2021: true      # 启用对 ES2021 语法的支持
 
-globals:
-  process: readonly # 声明全局变量 process 是只读的
-
 extends:
   - eslint:recommended                     # 使用 ESLint 推荐的规则
   - plugin:@typescript-eslint/recommended  # 使用 TypeScript 推荐的规则
   - plugin:react/recommended               # 使用 React 推荐的规则
+
+globals:
+  process: readonly # 声明全局变量 process 是只读的
 
 parser: "@typescript-eslint/parser"   # 使用 @typescript-eslint/parser 解析器
 
