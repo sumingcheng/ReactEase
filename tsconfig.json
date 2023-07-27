@@ -1,0 +1,125 @@
+{
+  "compilerOptions": {
+    /* 项目 */
+    // "incremental": true,  // 保存.tsbuildinfo文件以允许项目的增量编译。
+    // "composite": true,  // 启用允许TypeScript项目与项目引用一起使用的约束。
+    // "tsBuildInfoFile": "./.tsbuildinfo",  // 指定.tsbuildinfo增量编译文件的路径。
+    // "disableSourceOfProjectReferenceRedirect": true,  // 禁止在引用复合项目时优先选择源文件而不是声明文件。
+    // "disableSolutionSearching": true,  // 在编辑时使项目不参与多项目引用检查。
+    // "disableReferencedProjectLoad": true,  // 减少TypeScript自动加载的项目数量。
+
+    /* 语言和环境 */
+    "target": "es2016",
+    // 设置编译后的JavaScript目标版本。
+    // "lib": [],  // 指定一组捆绑库声明文件，用来描述目标运行时环境。
+    // "jsx": "preserve",  // 指定生成的JSX代码类型。
+    // "experimentalDecorators": true,  // 启用对传统实验装饰器的支持。
+    // "emitDecoratorMetadata": true,  // 为源文件中的装饰声明生成设计类型元数据。
+    // "jsxFactory": "",  // 指定用于生成React JSX发射的JSX工厂函数，例如 'React.createElement' 或 'h'。
+    // "jsxFragmentFactory": "",  // 指定用于生成React JSX发射的片段引用，例如 'React.Fragment' 或 'Fragment'。
+    // "jsxImportSource": "",  // 指定用于导入JSX工厂函数的模块说明符，当使用 'jsx: react-jsx*' 时。
+    // "reactNamespace": "",  // 指定用于 'createElement' 的对象。只有在目标为 'react' JSX 发射时才适用。
+    // "noLib": true,  // 禁止包含任何库文件，包括默认的 lib.d.ts。
+    // "useDefineForClassFields": true,  // 发射符合ECMAScript标准的类字段。
+    // "moduleDetection": "auto",  // 控制用于检测模块格式JS文件的方法。
+
+    /* 模块 */
+    "module": "es2020",
+    // 指定要生成的模块系统类型。
+    // "rootDir": "./",  // 指定源文件的根目录。
+    "moduleResolution": "node",
+    // 指定TypeScript如何从给定的模块说明符查找文件。
+    "baseUrl": "./",
+    // 设置解析非相对模块名的基础目录。
+    "paths": {
+      // 定义路径映射，可以方便地引入模块。
+      "@/*": [
+        "src/*"
+      ]
+    },
+    // "rootDirs": [],  // 允许多个目录在解析模块时被视为一个目录。
+    // "typeRoots": [],  // 指定多个目录，这些目录的行为类似于 './node_modules/@types'。
+    "types": [],
+    // 指定应包含的类型声明文件名称列表。
+    // "allowUmdGlobalAccess": true,  // 允许从模块访问UMD全局变量。
+    // "moduleSuffixes": [],  // 指定在解析模块时要搜索的文件名后缀列表。
+    "allowImportingTsExtensions": true,
+    // 允许导入包含TypeScript文件扩展名。需要设置 '--moduleResolution bundler' 和 '--noEmit' 或 '--emitDeclarationOnly'。
+    // "resolvePackageJsonExports": true,  // 在解析包导入时使用 package.json 的 'exports' 字段。
+    // "resolvePackageJsonImports": true,  // 在解析导入时使用 package.json 的 'imports' 字段。
+    // "customConditions": [],  // 在解析导入时设置解析器特定默认条件。
+    // "resolveJsonModule": true,  // 启用导入.json文件。
+    // "allowArbitraryExtensions": true,  // 允许导入任何扩展名的文件，只要存在声明文件。
+    // "noResolve": true,  // 不允许 'import'，'require' 或 '<reference>' 扩展TypeScript应将其添加到项目中的文件数量。
+
+    /* JavaScript 支持 */
+    "allowJs": true,
+    // 允许JavaScript文件作为你的项目的一部分。使用 'checkJS' 选项从这些文件中获取错误。
+    // "checkJs": true,  // 在类型检查的JavaScript文件中启用错误报告。
+    // "maxNodeModuleJsDepth": 1,  // 指定用于检查来自 'node_modules' 的JavaScript文件的最大文件夹深度。仅在 'allowJs' 可用时适用。
+
+    /* 发射 */
+    // "declaration": true,  // 从你的项目的TypeScript和JavaScript文件中生成 .d.ts 文件。
+    // "declarationMap": true,  // 为 .d.ts 文件创建源映射。
+    // "emitDeclarationOnly": true,  // 只输出 .d.ts 文件，而不输出 JavaScript 文件。
+    // "sourceMap": true,  // 为发射的JavaScript文件创建源映射文件。
+    // "inlineSourceMap": true,  // 在发射的JavaScript内部包含源映射文件。
+    // "outFile": "./",  // 指定一个文件，该文件将所有输出捆绑到一个JavaScript文件中。如果 'declaration' 为 true，也指定一个文件，该文件将所有 .d.ts 输出捆绑在一起。
+    // "outDir": "./",  // 指定所有发射文件的输出文件夹。
+    // "removeComments": true,  // 禁止发射注释。
+    // "noEmit": true,  // 禁止从编译中发射文件。
+    // "importHelpers": true,  // 允许从 tslib 一次导入帮助函数，而不是每个文件中都包含它们。
+    // "importsNotUsedAsValues": "remove",  // 指定仅用于类型的导入的发射/检查行为。
+    // "downlevelIteration": true,  // 为迭代发射更兼容但冗长且性能较差的JavaScript。
+    // "sourceRoot": "",  // 指定调试器找到引用源代码的根路径。
+    // "mapRoot": "",  // 指定调试器应在生成的位置而不是映射文件中定位映射文件的位置。
+    // "inlineSources": true,  // 在发射的JavaScript的源映射中包含源代码。
+    // "emitBOM": true,  // 在输出文件的开头发射UTF-8字节顺序标记 (BOM)。
+    // "newLine": "crlf",  // 设置发射文件的换行符。
+    // "stripInternal": true,  // 禁止发射在其JSDoc注释中有 '@internal' 的声明。
+    // "noEmitHelpers": true,  // 禁止在编译输出中生成自定义帮助函数，如 '__extends'。
+    // "noEmitOnError": true,  // 如果报告了任何类型检查错误，禁止发射文件。
+    // "preserveConstEnums": true,  // 禁止在生成的代码中擦除 'const enum' 声明。
+    // "declarationDir": "./",  // 指定生成声明文件的输出目录。
+    // "preserveValueImports": true,  // 保留JavaScript输出中的未使用的导入值，否则将被删除。
+
+    /* Interop Constraints */
+    // "isolatedModules": true,  // 确保每个文件都可以安全地独立转换，而不依赖于其他导入。
+    // "verbatimModuleSyntax": true,  // 不转换或省略未标记为仅类型的导入或导出，确保它们根据 'module' 设置写入输出文件的格式。
+    // "allowSyntheticDefaultImports": true, // 允许 'import x from y' 当模块没有默认导出时。
+    "esModuleInterop": true,
+    // 为了支持CommonJS模块的导入，生成额外的代码。这启用了 'allowSyntheticDefaultImports' 以实现类型兼容性。
+    // "preserveSymlinks": true,  // 禁止将符号链接解析为其真实路径。这与 node 中的同名标志相对应。
+    "forceConsistentCasingInFileNames": true,
+    // 确保在导入时大小写的一致性。
+
+    /* 类型检查 */
+    "strict": true,
+    // 启用所有严格的类型检查选项。
+    // "noImplicitAny": true,  // 启用对表达式和声明的隐含 'any' 类型的错误报告。
+    // "strictNullChecks": true,  // 在类型检查时，考虑 'null' 和 'undefined'。
+    // "strictFunctionTypes": true,  // 在分配函数时，检查以确保参数和返回值是子类型兼容的。
+    // "strictBindCallApply": true,  // 检查 'bind'，'call' 和 'apply' 方法的参数是否匹配原始函数。
+    // "strictPropertyInitialization": true,  // 检查在构造函数中是否设置了声明但未设置的类属性。
+    // "noImplicitThis": true,  // 启用对给 'this' 类型为 'any' 的错误报告。
+    // "useUnknownInCatchVariables": true, // 默认 catch 子句变量为 'unknown' 而不是 'any'。
+    // "alwaysStrict": true, // 确保始终发射 'use strict'。
+    // "noUnusedLocals": true,  // 启用对未读取的局部变量的错误报告。
+    // "noUnusedParameters": true,  // 报告未读取的函数参数的错误。
+    // "exactOptionalPropertyTypes": true,  // 按照书写解释可选属性类型，而不是添加 'undefined'。
+    // "noImplicitReturns": true,  // 启用对在函数中不显式返回的代码路径的错误报告。
+    // "noFallthroughCasesInSwitch": true,  // 启用对 switch 语句中的跳过案例的错误报告。
+    // "noUncheckedIndexedAccess": true,  // 在使用索引访问时添加 'undefined' 到类型。
+    // "noImplicitOverride": true,  // 确保在派生类中覆盖的成员标有 override 修饰符。
+    // "noPropertyAccessFromIndexSignature": true,  // 强制使用索引访问器来获取使用索引类型声明的键。
+    // "allowUnusedLabels": true,  // 禁止对未使用的标签进行错误报告。
+    // "allowUnreachableCode": true,  // 禁止对无法达到的代码进行错误报告。
+
+    /* 完整性 */
+    // "skipDefaultLibCheck": true,  // 跳过检查 TypeScript 中包含的 .d.ts 文件。
+    "skipLibCheck": true,
+    // 跳过检查所有 .d.ts 文件。
+    "jsx": "react"
+    // 指定JSX的发射和检查模式。
+  }
+}
