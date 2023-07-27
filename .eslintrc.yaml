@@ -7,6 +7,7 @@ extends:
   - eslint:recommended                     # 使用 ESLint 推荐的规则
   - plugin:@typescript-eslint/recommended  # 使用 TypeScript 推荐的规则
   - plugin:react/recommended               # 使用 React 推荐的规则
+  - plugin:prettier/recommended
 
 globals:
   process: readonly
@@ -24,11 +25,9 @@ plugins:
 
 rules:
   indent:
-    - error
-    - 4
+    - off
   linebreak-style:
-    - error
-    - "windows"
+    - off
   quotes:
     - error
     - "single"

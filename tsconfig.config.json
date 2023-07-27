@@ -6,6 +6,7 @@
     "cypress.config.*"
   ],
   "compilerOptions": {
+    "esModuleInterop": true,
     "composite": true,
     "types": [
       "node"

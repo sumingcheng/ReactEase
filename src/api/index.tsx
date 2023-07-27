@@ -1,7 +1,7 @@
-import http from '@/utils/http.js'
+import http from '@/utils/http.tsx'
 
 // 列出档案
-export function listArchive (path) {
+export function listArchive(path: string) {
   return http({
     url: '/list-archive?' + `path=${encodeURIComponent(path)}`,
     method: 'get',
@@ -9,7 +9,7 @@ export function listArchive (path) {
 }
 
 // 搜索档案
-export function searchArchive (name) {
+export function searchArchive(name: string) {
   return http({
     url: `/search-archive?name=${encodeURIComponent(name)}`,
     method: 'get',
@@ -17,40 +17,40 @@ export function searchArchive (name) {
 }
 
 // 重命名档案/移动档案
-export function moveArchive (data) {
+export function moveArchive(data: string) {
   return http({
-    url: `/move-archive`,
+    url: '/move-archive',
     method: 'post',
-    data
+    data,
   })
 }
 
 // 删除档案
-export function deleteArchive (data) {
+export function deleteArchive(data: string) {
   return http({
-    url: `/delete-archive`,
+    url: '/delete-archive',
     method: 'post',
-    data
+    data,
   })
 }
 
 // 上传档案
-export function uploadArchive (data) {
+export function uploadArchive(data: string) {
   return http({
     headers: {
-      'Content-Type': 'multipart/form-data'
+      'Content-Type': 'multipart/form-data',
     },
-    url: `/upload-archive`,
+    url: '/upload-archive',
     method: 'post',
-    data
+    data,
   })
 }
 
 // 创建档案目录
-export function newArchiveDir (data) {
+export function newArchiveDir(data: string) {
   return http({
-    url: `/new-archive-dir`,
+    url: '/new-archive-dir',
     method: 'post',
-    data
+    data,
   })
 }

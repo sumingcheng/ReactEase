@@ -1,6 +1,7 @@
+import React from 'react'
 import '@/assets/less/layout.less'
-import Menu from '@/layout/Menu.jsx'
-import Header from '@/layout/Header.jsx'
+import Menu from '@/layout/Menu.js'
+import Header from '@/layout/Header.tsx'
 
 // 主框架
 const layout = ({ children }) => {
