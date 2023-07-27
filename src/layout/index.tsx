@@ -1,10 +1,11 @@
-import React from 'react'
+import React, { FC } from 'react'
 import '@/assets/less/layout.less'
-import Menu from '@/layout/Menu.js'
-import Header from '@/layout/Header.tsx'
+import Menu from '@/layout/menu.js'
+import Header from '@/layout/header.tsx'
+import { LayoutProps } from '@/layout/type.ts'
 
 // 主框架
-const layout = ({ children }) => {
+const Layout: FC = ({ children }: LayoutProps) => {
   return (
     <>
       <Header></Header>
@@ -16,4 +17,4 @@ const layout = ({ children }) => {
   )
 }
 
-export default layout
+export default Layout

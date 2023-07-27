@@ -34,3 +34,8 @@ rules:
   semi:
     - error
     - "never"
+  max-len:
+    - error
+    - 120
+  typescript-eslint/no-explicit-any:
+    - off
