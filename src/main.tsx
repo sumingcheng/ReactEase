@@ -10,7 +10,7 @@ import '@/assets/index.css'
 import { GlobalProvider } from '@/context/GlobalContext.tsx'
 
 const root = document.getElementById('root')
-
+console.log('测试错误格式提交')
 if (root === null) {
   throw new Error('没有找到根元素')
 }
