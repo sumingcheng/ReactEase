@@ -21,6 +21,6 @@ export default {
     'scope-empty': [2, 'never'], // scope 不能为空
     'subject-case': [2, 'never', ['upper-case']], // 提交信息的主题不能是大写
     'scope-case': [2, 'always', 'lower-case'], // scope 必须是小写
-    'header-max-length': [2, 'always', 999], // 提交信息的长度不能超过72个字符
+    'header-max-length': [2, 'always', 9999], // 提交信息的长度不能超过72个字符
   },
 }
