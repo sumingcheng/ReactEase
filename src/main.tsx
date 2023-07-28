@@ -14,7 +14,8 @@ const root = document.getElementById('root')
 if (root === null) {
   throw new Error('没有找到根元素')
 }
-
+const ENV = import.meta.env.VITE_APP_API_URL
+console.log(ENV)
 createRoot(root).render(
   <ConfigProvider
     locale={zhCN}
