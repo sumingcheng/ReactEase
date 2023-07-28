@@ -5,14 +5,14 @@ import Header from '@/layout/header.tsx'
 import { LayoutProps } from '@/layout/type.ts'
 
 // 主框架
-const Layout: FC = ({ children }: LayoutProps) => {
+const Layout: FC<LayoutProps> = ({ children }) => {
   return (
     <>
       <Header></Header>
-      <div className='left bg-slate-800'>
+      <div className="left bg-slate-800">
         <Menu></Menu>
       </div>
-      <div className='right'>{children}</div>
+      <div className="right">{children}</div>
     </>
   )
 }

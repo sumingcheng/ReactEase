@@ -9,7 +9,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route
-          path='/'
+          path="/"
           element={
             <Layout>
               <Index />
@@ -17,7 +17,7 @@ function App() {
           }
         />
         <Route
-          path='*'
+          path="*"
           element={
             <Layout>
               <PageNotFound />
