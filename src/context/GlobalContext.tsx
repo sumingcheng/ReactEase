@@ -1,20 +1,14 @@
 // GlobalContext.tsx
-import React, { useState, createContext, Dispatch, SetStateAction } from 'react'
-import { LayoutProps } from '@/context/type.ts'
-
-// 定义 GlobalContext 的属性类型
-interface GlobalContextProps {
-  globalState: string // 全局状态
-  setGlobalState: Dispatch<SetStateAction<string>> // 改变全局状态的函数
-}
+import React, { useState, createContext } from 'react'
+import { ChildrenType, GlobalContextProps } from '@/context/type.ts'
 
 // 创建 GlobalContext，其 context 的值类型为 GlobalContextProps 或 undefined
 export const GlobalContext = createContext<GlobalContextProps | undefined>(undefined)
 
 // 定义一个全局的状态提供者组件 GlobalProvider，这个组件的子元素类型为 LayoutProps
-export const GlobalProvider: React.FC<LayoutProps> = ({ children }) => {
+export const GlobalProvider: React.FC<ChildrenType> = ({ children }) => {
   // 使用 useState 创建一个名为 globalState 的状态变量，初始值为 'initial value'，
-  // 并创建一个名为 setGlobalState 的函数，用于改变 globalState 的值
+
   const [globalState, setGlobalState] = useState<string>('initial value')
 
   // 返回一个 GlobalContext.Provider 组件，
