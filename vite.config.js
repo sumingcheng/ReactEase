@@ -1,6 +1,6 @@
 import path from 'path'
 import legacy from '@vitejs/plugin-legacy'
-import react from '@vitejs/plugin-react'
+import react from '@vitejs/plugin-react-swc'
 import autoprefixer from 'autoprefixer'
 import tailwindcss from 'tailwindcss'
 import { defineConfig, splitVendorChunkPlugin } from 'vite'
