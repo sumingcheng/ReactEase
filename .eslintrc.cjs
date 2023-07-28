@@ -28,7 +28,7 @@ module.exports = {
     'linebreak-style': 'off',
     quotes: ['error', 'single'],
     semi: ['error', 'never'],
-    'max-len': ['error', 120],
+    'max-len': ['error', 100],
     '@typescript-eslint/no-explicit-any': 'off',
     'import/order': [
       'error',
@@ -39,7 +39,7 @@ module.exports = {
           'internal',     // 项目内部模块，相对于项目根目录的路径
           'parent',       // 当前文件的父级目录中的模块
           'sibling',      // 同级目录中的模块
-          'index',         // 当前目录下的 index.js 或 index.ts 文件
+          'index',         // 当前目录下的 index.tsx 或 index.ts 文件
         ],
         'newlines-between': 'never',   // 不要求在不同类型模块间添加空行
         'alphabetize': {

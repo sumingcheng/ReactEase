@@ -19,10 +19,7 @@ const items = [
     label: 'JavaScript',
     key: 'sub1',
     icon: <Html5Filled />,
-    children: [
-      getItem({ label: '单例模式', key: 'SingletonPattern' }),
-      getItem({ label: '策略模式', key: 'StrategyPattern' }),
-    ],
+    children: [getItem({ label: '首页', key: '' }), getItem({ label: '详情页', key: 'detail' })],
   }),
 ]
 

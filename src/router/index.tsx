@@ -1,8 +1,9 @@
 import React from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import Layout from '@/layout/index.jsx'
-import Index from '@/views/home/index.jsx'
-import PageNotFound from '@/views/error/index.jsx'
+import Layout from '@/layout/index.tsx'
+import PageNotFound from '@/views/error/index.tsx'
+import Index from '@/views/home/index.tsx'
+import Detail from '@/views/detail/index.tsx'
 
 function App() {
   return (
@@ -13,6 +14,14 @@ function App() {
           element={
             <Layout>
               <Index />
+            </Layout>
+          }
+        />
+        <Route
+          path="/detail"
+          element={
+            <Layout>
+              <Detail />
             </Layout>
           }
         />

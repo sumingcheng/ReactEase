@@ -3,10 +3,11 @@ import * as React from 'react'
 import { createRoot } from 'react-dom/client'
 import { ConfigProvider } from 'antd'
 import zhCN from 'antd/es/locale/zh_CN'
-// 项目内部模块的导入
 import Routers from '@/router/index.tsx'
 // 样式文件或其他资源的导入
 import '@/assets/index.css'
+// 项目内部模块的导入
+import { GlobalProvider } from '@/context/GlobalContext.tsx'
 
 const root = document.getElementById('root')
 
@@ -27,7 +28,9 @@ createRoot(root).render(
     }}
   >
     <React.StrictMode>
-      <Routers />
+      <GlobalProvider>
+        <Routers />
+      </GlobalProvider>
     </React.StrictMode>
   </ConfigProvider>
 )
