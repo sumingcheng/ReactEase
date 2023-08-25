@@ -37,6 +37,7 @@ export default defineConfig({
         main: path.resolve(__dirname, 'index.html'),
       },
       output: {
+        format: 'system',
         manualChunks(id) {
           // manualChunks函数用于控制代码拆分，这里的实现将node_modules中的各个包单独拆分为一个chunk。
           if (id.includes('node_modules')) {
